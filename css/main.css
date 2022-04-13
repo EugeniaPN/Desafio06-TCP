@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logoImg{
+    max-width: 10%;
+    max-height: 10%;
+    /* margin: 130px; */
+}
+
+body{
+    background-color: #ffeddc;
+}
+
+.caratula{
+    display: flex;
+    padding: 1.8em;
+    justify-content: center;
+    
+}
+
+.indexTitulo{
+    font-size: 20px;
+    font-family: 'Baskervville', serif;
+    font-weight: 500;
+    color: #a57667;
+    /* margin: 10px 40px; */
+    border-bottom: 5px solid #7daa7b; 
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 720px;
+    margin: 0 auto;
+    font-family: 'Baskervville', serif;
+    list-style: none;
+    background-color: white ;
+    border: 2px solid #7daa7b ;
+}
+
+.menu li {
+    width: 125px;
+    height: 50px;   
+    text-align: center;
+}
+
+.menu li a {
+        font-size: 22px;
+        text-decoration: none;
+        transition: all 0.45s;
+        color: #7daa7b;
+}
+
+
+.infoAdopcion{
+        display: flex;
+        flex-wrap: nowrap;
+        box-sizing: border-box;
+        background-color: white;
+        color: #a57667;
+        justify-content: space-between;
+        align-items: center; 
+        text-align: center;
+        font-family: 'Baskervville', serif;
+        font-size: medium;
+        border: #7daa7b solid;
+        height: 350px;
+}
+
+.infoUno{
+    margin: 4em ;
+    padding: 4em ;
+}
+
+.infoDos{
+    margin: 4em ;
+    padding: 4em ;
+
+}
+
+.otraInfo{
+        display: grid;
+        grid-area: otraInfo;
+        grid-template-columns: 30em 30em  ;
+        column-gap: 15em;
+        flex-wrap: wrap;
+        box-sizing: border-box ;
+        background-color: white;
+        color: #a57667;
+        justify-content: center; 
+        text-align: center;
+        font-family: 'Baskervville', serif;
+        font-size: medium;
+        border: #7daa7b solid;
+        margin: 50px auto;
+        padding: 100px 200px;
+    
+}
+
+.condicionesAdopcion{
+    display: grid;
+    grid-area: condicionesAdopcion;
+    grid-template-columns: 32em;
+    flex-wrap: wrap;
+    box-sizing: border-box ;
+    background-color: white;
+    color: #a57667;
+    justify-content: center; 
+    text-align: center;
+    font-family: 'Baskervville', serif;
+    font-size: medium;
+    border: #7daa7b solid;
+    margin: 50px auto;
+    padding: 100px 200px;
+    
+    
+}
+
+.contactoImg{
+        display: flex;
+        grid-area: contactoImg;
+        justify-content: center;
+        padding: 100px 0px 0px;
+        
+}
+
+
+
+.imgGatos{
+        display: grid;
+        grid-area: imgGatos;
+        grid-template-columns: 33em 33em 33em ;
+        grid-template-rows: 40em ; 
+        width: 95%;
+        margin-left: auto;
+        column-gap: 5em;
+        padding: 40px 180px; 
+}
+    
+.imgPerros{
+        display: grid;
+        grid-area: imgPerros;
+        grid-template-columns: 33em 33em 33em ;
+        grid-template-rows: 40em ; 
+        width: 95%;
+        margin-left: auto;
+        column-gap: 5em;
+        padding: 40px 180px;
+           
+}
+    
+.imgTienda{
+        display: grid;
+        grid-area: imgTienda;
+        grid-template-columns: 33em 33em 33em ;
+        grid-template-rows: 40em ; 
+        width: 95%;
+        margin-left: auto;
+        column-gap: 5em;
+        padding: 40px 180px;
+         
+}
+
+.imgTienda p{
+    font-family: 'Baskervville', serif;
+    text-align: left ;
+    color: #7daa7b;
+    font-size:medium;
+    box-sizing: border-box;
+    list-style: none;   
+}
+
+
+
+fieldset{
+    text-align: center;
+    font-family: 'Baskervville', serif;
+    list-style: none;
+    background-color: white ;
+    border: 2px solid #7daa7b ;
+    margin: 10px;
+    width: 500px;
+    
+}
+
+footer{
+    display: flex;
+    font-family: 'Baskervville', serif;
+    justify-content: center;
+    color: #a57667;
+    border-top: 2px solid #7daa7b;
+    height: 50px; 
+}
+
+/* GRID INDEX */
+
+.headerGrid{
+    grid-area: headerGrid;
+}
+
+.navGrid{
+    grid-area: navGrid;
+}
+
+.mainGrid{
+    grid-area: mainGrid;
+}
+
+.sectionGrid{
+    grid-area: sectionGrid;
+}
+
+.footerGrid{
+    grid-area: footerGrid;
+}
+
+.contenedor{
+    
+    display: grid;
+     grid-template-areas: "headerGrid "
+                        " navGrid" 
+                        "mainGrid"
+                        "sectionGrid"
+                        "footerGrid";
+    
+     justify-content: center;                   
+}
+
+.flexBoxStart{
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+@media only screen and (max-width: 600px) {
+ 
+    .infoAdopcion{
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        background-color: white;
+        color: #a57667;
+        justify-content: space-between;
+        text-align: center;
+        font-family: 'Baskervville', serif;
+        font-size: medium;
+        border: #7daa7b solid;
+        /* margin: 50px auto; */
+        /* padding: 100px 500px; */
+        height: 350px;
+}
+    
+}
+
