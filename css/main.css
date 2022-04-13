@@ -5,9 +5,8 @@
 }
 
 .logoImg{
-    max-width: 10%;
-    max-height: 10%;
-    /* margin: 130px; */
+    max-width: 20%;
+    max-height: 20%;
 }
 
 body{
@@ -22,38 +21,54 @@ body{
 }
 
 .indexTitulo{
-    font-size: 20px;
+    font-size: 30px;
     font-family: 'Baskervville', serif;
-    font-weight: 500;
+    font-weight: 00;
     color: #a57667;
-    /* margin: 10px 40px; */
-    border-bottom: 5px solid #7daa7b; 
-}
-
-.menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 720px;
-    margin: 0 auto;
-    font-family: 'Baskervville', serif;
-    list-style: none;
-    background-color: white ;
-    border: 2px solid #7daa7b ;
-}
-
-.menu li {
-    width: 125px;
-    height: 50px;   
+    margin: 10px 40px;
     text-align: center;
 }
 
-.menu li a {
-        font-size: 22px;
-        text-decoration: none;
-        transition: all 0.45s;
-        color: #7daa7b;
-}
+
+.navGrid {
+    width: 100%;
+    margin: 0 auto;
+    background: white;
+    border: 2px solid #7daa7b ;
+    font-family: 'Baskervville', serif;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+  }
+  
+
+.navGrid ul {
+    list-style: none;
+    text-align: center;
+  }
+
+  .navGrid ul li {
+    display: inline-block;
+  }
+
+.navGrid ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #a57667;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 10px;
+  }
+
+  .navGrid ul li a,
+  .navGrid ul li a:after,
+  .navGrid ul li a:before {
+    transition: all .5s;
+  }
+
+  .navGrid ul li a:hover {
+    color: #7daa7b;
+  }
+
 
 
 .infoAdopcion{
@@ -187,14 +202,33 @@ fieldset{
     
 }
 
-footer{
-    display: flex;
+.footerGrid{
+    text-align: center;
     font-family: 'Baskervville', serif;
-    justify-content: center;
     color: #a57667;
     border-top: 2px solid #7daa7b;
     height: 50px; 
 }
+
+.mediaImg{
+    display: grid;
+    display: flex;
+    grid-template-columns: 1em 1em 1em;
+    column-gap: 5em;
+    padding: 20px 80px; 
+    margin-left: auto;
+    justify-content: center;
+}
+
+.mediaImg a{
+    transition: all .4s ease-in-out;
+}
+
+.mediaImg a:hover{
+    transform: scale(1.2);
+    
+}
+
 
 /* GRID INDEX */
 
@@ -255,4 +289,3 @@ footer{
 }
     
 }
-
