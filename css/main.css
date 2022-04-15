@@ -146,49 +146,38 @@ body{
 
 
 .imgGatos{
-        display: grid;
-        grid-area: imgGatos;
-        grid-template-columns: 33em 33em 33em ;
-        grid-template-rows: 40em ; 
+        font-family: 'Baskervville', serif;
         width: 95%;
         margin-left: auto;
-        column-gap: 5em;
         padding: 40px 180px; 
+        
 }
+
+a {
+    color: #a57667;
+    text-decoration: underline;
+    text-decoration: none;
     
+}
+
+a :hover{
+    color: #7daa7b;
+}
+
+.p-4 h2 a,
+.p-4 h2 a::after,
+.p-4 h2 a::before{
+    transition: all .5s;
+}
+
 .imgPerros{
-        display: grid;
-        grid-area: imgPerros;
-        grid-template-columns: 33em 33em 33em ;
-        grid-template-rows: 40em ; 
-        width: 95%;
+       font-family: 'Baskervville', serif;
+       width: 95%;
         margin-left: auto;
-        column-gap: 5em;
         padding: 40px 180px;
            
 }
     
-.imgTienda{
-        display: grid;
-        grid-area: imgTienda;
-        grid-template-columns: 33em 33em 33em ;
-        grid-template-rows: 40em ; 
-        width: 95%;
-        margin-left: auto;
-        column-gap: 5em;
-        padding: 40px 180px;
-         
-}
-
-.imgTienda p{
-    font-family: 'Baskervville', serif;
-    text-align: left ;
-    color: #7daa7b;
-    font-size:medium;
-    box-sizing: border-box;
-    list-style: none;   
-}
-
 
 
 fieldset{
