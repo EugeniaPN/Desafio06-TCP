@@ -71,7 +71,7 @@ body{
 
 
 
-.infoAdopcion{
+.infoAdopcion {
         display: flex;
         flex-wrap: nowrap;
         box-sizing: border-box;
@@ -99,7 +99,6 @@ body{
 
 .otraInfo{
         display: grid;
-        grid-area: otraInfo;
         grid-template-columns: 30em 30em  ;
         column-gap: 15em;
         flex-wrap: wrap;
@@ -129,19 +128,100 @@ body{
     font-family: 'Baskervville', serif;
     font-size: medium;
     border: #7daa7b solid;
-    margin: 50px auto;
+    margin:  50px auto;
     padding: 100px 200px;
     
     
 }
 
-.contactoImg{
-        display: flex;
-        grid-area: contactoImg;
-        justify-content: center;
-        padding: 100px 0px 0px;
-        
+/*formulario */
+
+.formularioAdopcion{
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    padding: 2em;
+    border: #7daa7b solid;
+    margin: auto;
+    font-family: 'Baskervville', serif;
+
+    
 }
+
+
+.sectionContacto{
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 2em;
+    border-top: #7daa7b solid;
+    margin:  50px auto;
+
+}
+
+  .experiencia{
+	display: flex;
+	box-sizing: border-box;
+    font-family: 'Baskervville', serif;
+    color: #a57667;
+	padding: 3.5em;
+	font-size: 1em;
+  }
+
+  .contactoFormulario {
+    
+	max-width: 1208px;
+	max-width: 30.5rem;
+	
+  }
+
+  .contacto, label, input[name="submit"] {
+	position: relative;
+  }
+
+  
+  label > span, input, textarea, button {
+	box-sizing: border-box;
+    font-family: 'Baskervville', serif;
+  }
+
+
+  input, textarea, button {
+	width: 100%;
+	padding: 0.5em;
+	border: none;
+	
+  }
+
+  input[type="text"], input[type="email"], textarea , input[type="DNI"] , input[type="Telefono de contacto"]{
+    
+	margin: 0 0 1em;
+	border: 1px solid #ccc;
+	outline: none;
+    font-family: 'Baskervville', serif;
+    color: #a57667;
+
+  }
+
+  input.invalid, textarea.invalid {
+	border-color: #d5144d;
+  }
+  textarea {
+	height: 6em;
+  }
+  input[type="submit"], button {
+    transition: all .5s;
+	background: #a57667;;
+	color: #333;
+  }
+
+  input[type="submit"]:hover, button:hover {
+	background: #7daa7b;
+  }
+
+
+/*formulario */
 
 
 
@@ -164,11 +244,8 @@ a :hover{
     color: #7daa7b;
 }
 
-.p-4 h2 a,
-.p-4 h2 a::after,
-.p-4 h2 a::before{
-    transition: all .5s;
-}
+
+
 
 .imgPerros{
        font-family: 'Baskervville', serif;

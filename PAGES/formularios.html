@@ -44,60 +44,80 @@
   <!--frase logo-->
   <h1 class="indexTitulo" >Encontrá a tu Mejor Amigo/a </h1>
 
+
+
+<!--info adopciones -->
+
+<section class="otraInfo">
+
+
+  <div>
+      <h2> A tener en cuenta! </h2>
+ 
+      <p> Se entrevista a los posibles candidatos para cada adopción. Para poder adoptar es necesario ser mayor de edad, tener el consentimiento de todos los integrantes de la familia y acreditar su identidad mediante la presentación del documento de identidad. También se exige la copia de cualquier servicio a nombre del adoptante para poder cotejar la veracidad del domicilio.</p>
+ 
+     </div>
+     <div>
+      <h2> Seguimientos!</h2>
+ 
+      <p>Cada animal se entrega en adopción con una chapa identificadora que tiene números de contacto del grupo y un número que corresponde al animal adoptado. Una vez que se efectuó la adopción, se vuelca esa información a una base de datos, que permite tener acceso a la información para llevar a cabo los seguimientos.
+     <span>
+     Se realizan varios llamados a lo largo del tiempo para ver cómo se adaptó a su nuevo hogar.
+     </span></p> 
+  </div>
+ 
+ </section>
+ 
+
+
 <!--formulario de adopcion-->
 
-<form action="">
-  <fieldset>
-      
-      <legend>
-         Formulario de Adopcion 
-      </legend>
-      <br>
-       <div>
-          <label for="nombre">Nombre y Apellido </label>
-          <input type="text" name="nombre" placeholder="">
-      </div>
-      <br>
-      <div>
-          <label for="nombre">localidad </label>
-          <input type="text" name="nombre" placeholder="">
-      </div>
-      <br>
-      <div>
-          <label for="email">
-                  E-mail
-          </label>
-          <input type="email" name="email" placeholder="">
-      </div>
-      <br>
-      <div>
-          <label for="pais">
-                  Tipo de mascota
-          </label>
-          <select name="pais" id="">
-                 <option value="Perro">Perro</option>
-                 <option value="Gato">Gato</option>
-          </select>
-      </div>
-      <br>
-      <div>
-          <label for="genero">
-                  ¿En que tipo de vivienda habitas?
-          </label>
-      </div>
-      <br>
-      <div>
-              <input type="radio" name="genero" value=" casa">  Casa <br>
-              <input type="radio"name="genero" value=" PH"> PH  <br>
-              <input type="radio"name="genero" value=" Departamento"> Departamento <br>
-      </div>
-     <br>
-      <div>
-          <input type="submit" value="Enviar">
-      </div>
+<section class="formularioAdopcion ">
 
-  </fieldset>
-</form> 
+  <div class="contactoFormulario">
+	
+  <p class="experiencia" >
+    <span>Ingresa tus datos para postularte para la adopcion</span> 
+  </p>
+  
+  <form class="contacto" name="contact">
+  
+    <label><span>	Nombre y Apellido </span><input name="Nombre" type="text" placeholder="Nombre"/></label>
+    
+    <label> <span> DNI</span> <input type="DNI" name="DNI" placeholder="DNI"></label>
+
+    <label> <span> Telefono de contacto</span><input type="Telefono de contacto" name="Telefono de contacto" placeholder="Telefono de contacto"></label>
+
+    <label> <span>localidad</span>  <input type="text" name="localidad" placeholder="localidad"> </label>
+
+    <label> <span> ¿Tipo de mascota estas interesado en adoptar?</span>
+    <select name="Tipo" id="">
+     <option value="Perro">Perro</option>
+     <option value="Gato">Gato</option>
+      </select>
+      <br><br>
+       </label>
+
+    <label><span>Email</span><input name="email" type="email" placeholder="Email"/></label>
+
+    <label> <span>¿En que tipo de vivienda habitas?</span> 
+      <input type="radio" name="genero" value=" casa">  Casa 
+            <input type="radio"name="genero" value=" PH"> PH 
+            <input type="radio"name="genero" value=" Departamento"> Departamento
+    </label>
+
+          <br><br>
+    <label> <span> tenes otros animales ¿estan castrados?</span>
+      <input type="radio" name="genero" value=" Si,todos castrados"> Si, todos castrados
+      <input type="radio"name="genero" value="  No castre aun."> No castre aun.
+      <input type="radio"name="genero" value=" No tengo otros animales"> No tengo otros animales
+      </label>
+    
+    <input name="submit" type="submit" value="Enviar"/>
+    
+  </form>
+  </div>
+  </section>
 
 
 
